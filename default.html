@@ -21,6 +21,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
   <style>
 .button {
@@ -78,14 +80,19 @@ What is Sass? Your guide to this top CSS preprocessor
 
 <h1>By Tammy Coron January 10, 2020 </h1>
 
+<div class="container-fluid p-5 bg-primary text-white text-center">
 Discover what Sass is, and learn how to start using it.
+</div>
 
 What is Sass? That's the question we here to answer. If you're new to web design, you've probably heard the term floating around, but you might not be quite up to speed with exactly what Sass is, what is does, and whether or not you should be using it. In short, Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient. Let's explore in more detail. 
 
 Article source: https://www.creativebloq.com/web-design/what-is-sass-111517618
 
-What is a CSS preprocessor?
 
+<h1> What is a CSS preprocessor? </h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div></div>
 A CSS preprocessor is a scripting language that extends CSS by allowing developers to write code in one language and then compile it into CSS. Sass is perhaps the most popular preprocessor around right now, but other well-known examples include Less and Stylus.
 
 Before we go any further, a quick public service announcement is in order: most web designers would say that if you're new to CSS, you're better off avoiding Sass (or any preprocessors, extensions or frameworks) while you're still learning. While it's true they offer many advantages in speed and efficiency, it's important that you really get to grips with the basics of CSS. Make sure you learn the core concepts before you start exploring shortcuts and confusing things.
@@ -113,6 +120,7 @@ Variables
 
 Just like other programming languages, Sass allows the use of variables that can store information you can use throughout your style sheet. For example, you can store a colour value in a variable at the top of the file, and then use this variable when setting the colour of your elements. This enables you to quickly change your colours without having to modify each line separately.
 
+
 For example:
 
 $font-stack:    Helvetica, sans-serif;
@@ -129,13 +137,17 @@ body {
   font: 100% Helvetica, sans-serif;
   color: #333;
 }
-
+<div align="center">
+<button type="button" class="btn btn-danger">Click for stress relief!</button>
+</div>
 Nesting
 
 Nesting is a double-edged sword. While it provides an excellent method for reducing the amount of code you need to write, it can also lead to over-qualified CSS if not executed carefully. The idea is to nest your CSS selectors in such a way as to mimic your HTML hierarchy.
 
 The following shows a basic navigation style that uses nesting:
-
+  <script>
+var stringAsHtml = $(selector).val().Replace("\r\n", "<br />\r\n");
+  </script>
 nav {
   ul {
     margin: 0;
@@ -176,6 +188,9 @@ Partials are smaller Sass files that can be imported (see next section) into oth
 Import
 
 Used with Partials (see previous section), the @import directive allows you to import your partial files into the current file, to build one single CSS file. Be mindful of how many imports you're using as an HTTP request will be generated for each one.
+<div class="alert alert-danger">
+  <strong>Attention!</strong> This is very important. Read carefuly.
+</div>
 
 // _reset.scss
 
@@ -260,6 +275,14 @@ Tammy is an independent creative professional and the host of Roundabout: Creati
 <br>
 <br>
 
+<div class="spinner-border text-muted"></div>
+<div class="spinner-border text-primary"></div>
+<div class="spinner-border text-success"></div>
+
+<h1>Waiting</h1>
+<h2>Waiting</h2>
+<h3>Waiting...</h3>
+
 
 <form action="/action_page.php">
   <label for="Email">Email:</label><br>
@@ -275,7 +298,7 @@ Tammy is an independent creative professional and the host of Roundabout: Creati
 
 
 
-  <script src="js/scripts.js"></script>
+
 </body>
 </html>
 
